@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 62.2vh;
+}
+
+/*Navbar.js*/
+
+nav {
+    min-height: 10vh;
+}
+
+
+/*iPads, tablets*/
+
+@media (min-width: 480px) {
+
+}
+
+/*Small screens, laptops*/
+
+@media (min-width: 768px) {
+
+}
+
+/*Desktops, large screens*/
+
+@media (min-width: 1024px) {
+
+}
+
+/*Extra large screens, TV*/
+
+@media (min-width: 1200px) {
+
+}

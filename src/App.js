@@ -5,7 +5,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route element={ <Landing /> }/>
+        <Route path='/' element={ <Landing /> }/>
       </Routes>
     </Router>
   )
