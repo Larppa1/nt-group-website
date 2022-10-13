@@ -12,14 +12,9 @@ body {
     flex-direction: column;
 }
 
-main {
-    min-height: 62.2vh;
-}
-
-/*Navbar.js*/
-
-nav {
-    min-height: 10vh;
+img {
+    max-height: 30vh;
+    min-width: 100%;
 }
 
 
@@ -38,7 +33,10 @@ nav {
 /*Desktops, large screens*/
 
 @media (min-width: 1024px) {
-
+    img {
+        
+        min-width: 100%;
+    }
 }
 
 /*Extra large screens, TV*/
