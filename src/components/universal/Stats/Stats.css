@@ -4,6 +4,10 @@
     max-width: 100vw;
 }
 
+.stat {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .stats {
         position: absolute;
@@ -13,9 +17,5 @@
         max-width: 50vw;
         left: 25%;
         right: 25%;
-    }
-
-    .stat {
-        text-align: center;
     }
 }
