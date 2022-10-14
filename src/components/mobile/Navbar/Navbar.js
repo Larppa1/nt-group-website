@@ -5,7 +5,7 @@ export default function Navbar() {
     return(
         <nav className="navbar text-primary-content">
             <section className="flex-1">
-                <Link className="btn btn-ghost normal-case text-xl" style={{color: 'white'}}
+                <Link className="btn btn-ghost normal-case text-xl" style={{color: 'white', fontSize: '1.6em', fontWeight: '800'}}
                     to="/">NT Group
                 </Link>
             </section>
@@ -14,7 +14,7 @@ export default function Navbar() {
                     <svg className="inline-block w-5 h-5 stroke-current"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
-                        viewBox="0 0 24 24">
+                        viewBox="0 0 20 20">
                         <path strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
