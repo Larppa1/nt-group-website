@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
+import '../../mobile/Navbar/Navbar.css'
 
 export default function DesktopNavbar() {
     return(
-        <nav className="navbar text-primary-content">
+        <nav className="navbar text-primary-content" style={{paddingBlock: '2vh'}}>
             <div className="flex-1">
                 <Link className="btn btn-ghost normal-case text-xl" style={{color: 'white', fontSize: '2.5em', fontWeight: '800'}}
                     to="/">NT Group

@@ -42,8 +42,8 @@ export default function Landing() {
             <div className='container'>
                 <header>
                     <DesktopNavbar />
-                    <article className="prose" style={{position: 'absolute', marginTop: '10vh', marginLeft: '1.5vw', backgroundColor: 'rgba(0, 0, 0, 0.6)', borderRadius: '1em', paddingInline: '0.5vw'}}>
-                        <h4 style={{color: 'white', fontStyle: 'italic', fontWeight: '700'}}>Sijoitustoimintaa vuodesta 2022</h4>
+                    <article className="prose" style={{position: 'absolute', marginTop: '12vh', marginLeft: '1.5vw', backgroundColor: 'rgba(0, 0, 0, 0.6)', borderRadius: '1em', paddingInline: '0.5vw'}}>
+                        <h3 style={{color: 'white', fontStyle: 'italic', fontWeight: '700'}}>Sijoitustoimintaa vuodesta 2022</h3>
                     </article>
                     <Stats />
                     <section>
@@ -51,7 +51,7 @@ export default function Landing() {
                     </section>
                 </header>
                 <main style={{paddingInline: '2vw'}}>
-                        <article className="prose">
+                    <article className="prose">
                         <h2 style={{color: 'black', marginTop: '3vh', fontWeight: '600'}}>Ajankohtaista</h2>
                     </article>
                     <section style={{marginBlockStart: '6vh', marginBlockEnd: '6vh', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-evenly'}}>

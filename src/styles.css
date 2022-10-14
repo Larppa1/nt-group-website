@@ -42,6 +42,9 @@ main {
         min-height: 75vh;
         object-fit: cover;
     }
+    main {
+        height: 70vh;
+    }
 }
 
 /*Extra large screens, TV*/
