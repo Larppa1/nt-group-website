@@ -10,11 +10,8 @@ export default function Landing() {
             <div className="container">
                 <header>
                     <Navbar />
-                    <article className="prose" style={{position: 'absolute', marginTop: '8vh', marginLeft: '7vw'}}>
-                        <h4 style={{color: 'white', fontStyle: 'italic'}}>Sijoitustoimintaa vuodesta 2022</h4>
-                    </article>
                     <section>
-                        <img src="https://cushmanwakefield.fi/wp-content/themes/cushman/api/serve_images.php?ID=336644" alt="Header background" />
+                        <img src="https://i.ibb.co/PxLFLFw/wallpapersden-com-helsinki-finland-capital-3840x2160.jpg" alt="Header background" />
                     </section>
                 </header>
                 <main>
@@ -45,25 +42,36 @@ export default function Landing() {
             <div className='container'>
                 <header>
                     <DesktopNavbar />
-                    <article className="prose" style={{position: 'absolute', marginTop: '8vh', marginLeft: '7vw'}}>
-                        <h4 style={{color: 'white', fontStyle: 'italic'}}>Sijoitustoimintaa vuodesta 2022</h4>
+                    <article className="prose" style={{position: 'absolute', marginTop: '10vh', marginLeft: '1.5vw', backgroundColor: 'rgba(0, 0, 0, 0.6)', borderRadius: '1em', paddingInline: '0.5vw'}}>
+                        <h4 style={{color: 'white', fontStyle: 'italic', fontWeight: '700'}}>Sijoitustoimintaa vuodesta 2022</h4>
                     </article>
+                    <Stats />
                     <section>
-                        <img src="https://cushmanwakefield.fi/wp-content/themes/cushman/api/serve_images.php?ID=336644" alt="Header background" />
+                        <img src="https://i.ibb.co/PxLFLFw/wallpapersden-com-helsinki-finland-capital-3840x2160.jpg" alt="Header background" />
                     </section>
                 </header>
-                <main>
+                <main style={{paddingInline: '2vw'}}>
                         <article className="prose">
-                        <h3 style={{color: 'black', marginTop: '2vh', marginLeft: '4vw'}}>Ajankohtaista</h3>
+                        <h2 style={{color: 'black', marginTop: '3vh', fontWeight: '600'}}>Ajankohtaista</h2>
                     </article>
-                    <section style={{marginBlockStart: '2vh', marginBlockEnd: '6vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly'}}>
-                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '90%', minHeight: '30vh', marginBlockEnd: '5vh', padding: '1em'}}>
-                            <h6 style={{fontSize: '0.8em'}}>10/10/2022</h6>
+                    <section style={{marginBlockStart: '6vh', marginBlockEnd: '6vh', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-evenly'}}>
+                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '50vw', minHeight: '20vh', marginBlockEnd: '5vh', padding: '1em'}}>
+                            <h6 style={{fontSize: '0.8em'}}>13/10/2022</h6>
                             <h4 style={{marginTop: '0vh'}}>NT Groupin hallitus on muodostettu!</h4>
                             <p style={{color: 'black', fontSize: '0.9em'}}>Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta.</p>
                         </article>
-                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '90%', minHeight: '30vh', marginBlockEnd: '5vh', padding: '1em'}}>
-                            <h6 style={{fontSize: '0.8em'}}>13/10/2022</h6>
+                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '50vw', minHeight: '20vh', marginBlockEnd: '5vh', padding: '1em'}}>
+                            <h6 style={{fontSize: '0.8em'}}>10/10/2022</h6>
+                            <h4 style={{marginTop: '0vh'}}>Uusien nettisivujen suunnittelu alkaa!</h4>
+                            <p style={{color: 'black', fontSize: '0.9em'}}>NT Groupin nettisivuja aletaan uudistamaan. Julkistus tapahtuu 31.10.2022 klo 12. Muista tulla tällöin testaamaan uudistetut sivumme!</p>
+                        </article>
+                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '50vw', minHeight: '20vh', marginBlockEnd: '5vh', padding: '1em'}}>
+                            <h6 style={{fontSize: '0.8em'}}>08/10/2022</h6>
+                            <h4 style={{marginTop: '0vh'}}>Uusien nettisivujen suunnittelu alkaa!</h4>
+                            <p style={{color: 'black', fontSize: '0.9em'}}>NT Groupin nettisivuja aletaan uudistamaan. Julkistus tapahtuu 31.10.2022 klo 12. Muista tulla tällöin testaamaan uudistetut sivumme!</p>
+                        </article>
+                        <article className="prose shadow-xl" style={{borderRadius: '1em', width: '50vw', minHeight: '20vh', marginBlockEnd: '5vh', padding: '1em'}}>
+                            <h6 style={{fontSize: '0.8em'}}>05/10/2022</h6>
                             <h4 style={{marginTop: '0vh'}}>Uusien nettisivujen suunnittelu alkaa!</h4>
                             <p style={{color: 'black', fontSize: '0.9em'}}>NT Groupin nettisivuja aletaan uudistamaan. Julkistus tapahtuu 31.10.2022 klo 12. Muista tulla tällöin testaamaan uudistetut sivumme!</p>
                         </article>

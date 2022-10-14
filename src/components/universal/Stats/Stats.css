@@ -2,5 +2,20 @@
     min-width: 100vw;
     width: 100vw;
     max-width: 100vw;
-    overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+    .stats {
+        position: absolute;
+        margin-top: 55vh;
+        min-width: 50vw;
+        width: 50vw;
+        max-width: 50vw;
+        left: 25%;
+        right: 25%;
+    }
+
+    .stat {
+        text-align: center;
+    }
 }

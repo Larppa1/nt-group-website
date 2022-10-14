@@ -17,6 +17,10 @@ img {
     min-width: 100%;
 }
 
+main {
+    min-height: 57.9vh;
+}
+
 
 /*iPads, tablets*/
 
@@ -35,7 +39,8 @@ img {
 @media (min-width: 1024px) {
     img {
         min-width: 100%;
-        min-height: 80vh;
+        min-height: 75vh;
+        object-fit: cover;
     }
 }
 

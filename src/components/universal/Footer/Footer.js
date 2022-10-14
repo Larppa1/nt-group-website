@@ -6,7 +6,9 @@ export default function Footer() {
             <section>
                 <article className="prose">
                     <h3>NT Group</h3>
-                    <p>Sijoitustoimintaa vuodesta 2022</p>
+                    <p>Sijoitustoimintaa vuodesta 2022!<br/>
+                    Helsinki, 00100 Finland
+                    </p>
                 </article>
             </section> 
             <section>
