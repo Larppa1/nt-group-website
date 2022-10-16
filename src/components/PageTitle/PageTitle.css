@@ -1,0 +1,7 @@
+#pageTitle {
+    margin-block: 3vh;
+}
+
+#pageTitle > article > h1 {
+    font-weight: 800;
+}

@@ -1,8 +1,10 @@
 @media (min-width: 768px) {
-    #contactMain > section {
+    main > section {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-evenly;
-        width: 80%;
+        margin-block: 6vh;
     }
 }

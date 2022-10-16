@@ -1,4 +1,4 @@
-#landingHeaderMobile {
+#landingHeader {
     min-height: 30vh;
     background-image: url("https://i.ibb.co/PxLFLFw/wallpapersden-com-helsinki-finland-capital-3840x2160.jpg");
     background-size: cover;
@@ -6,13 +6,20 @@
     background-position: center;
 }
 
-#landingMainMobile > article > h3 {
+#landingMain > section > article > h3 {
     color: black;
-    margin-top: 2vh;
-    margin-left: 4vw;
 }
 
-#landingMainMobile > section {
+#landingMain > section:first-of-type {
+    display: block;
+    text-align: left;
+    margin-left: 4vw;
+    width: 96%;
+    margin-top: 2vh;
+    margin-block-end: 0;
+}
+
+#landingMain > section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +38,14 @@
 /*Small screens, laptops*/
 
 @media (min-width: 768px) {
-    #landingHeaderDesktop {
+    #landingHeader {
         min-height: 75vh;
         background-image: url("https://i.ibb.co/PxLFLFw/wallpapersden-com-helsinki-finland-capital-3840x2160.jpg");
         background-size: cover;
         background-position: center;
     }
 
-    #landingHeaderDesktop > article {
+    #landingHeader > article {
         margin-top: 2vh;
         margin-left: 1.5vw;
         background-color: rgba(0, 0, 0, 0.6);
@@ -47,29 +54,36 @@
         width: fit-content;
     }
 
-    #landingHeaderDesktop > article > h3 {
+    #landingHeader > article > h3 {
         color: white;
         font-style: italic;
         font-weight: 700;
     }
 
-    #landingMainDesktop {
+    #landingMain {
         padding-inline: 2vw;
     }
 
-    #landingMainDesktop > article > h2 {
+    #landingMain > section > article > h2 {
         color: black;
-        margin-top: 3vh;
         font-weight: 600;
     }
-    #landingMainDesktop > section {
+
+    #landingMain > section:first-of-type {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-top: 3vh;
+        margin-block-end: 0;
+    }
+
+    #landingMain > section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         margin-block: 6vh;
-
     }
 }
 

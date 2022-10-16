@@ -1,0 +1,42 @@
+#shareIssueMain {
+    padding-inline: 1vw;
+}
+
+#shareIssueMain > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shareIssueMain > section > article {
+    text-align: center;
+}
+
+#shareIssueMain > section > form {
+    margin-block-start: 4vh;
+    margin-block-end: 35vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shareIssueMain > section > form > input {
+    width: 100%;
+}
+
+#shareIssueMain > section > form > button {
+    margin-top: 3vh;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    #shareIssueMain > section > form {
+        margin-block-end: 25vh;
+    }
+
+    #shareIssueMain > section > form > button {
+        margin-top: 4vh;
+        width: 40%;
+    }
+}

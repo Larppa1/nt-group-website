@@ -2,9 +2,12 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import ContactInfo from '../../components/ContactInfo/ContactInfo'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import PageTitle from '../../components/PageTitle/PageTitle'
 import './Contact.css'
 
 export default function Contact() {
+    const pageTitle = "Yhteystiedot"
+
     if(window.innerWidth < 768) {
         return(
             <div className="container">
@@ -12,9 +15,7 @@ export default function Contact() {
                     <Navbar />
                 </header>
                 <main id='contactMain'>
-                    <article className='prose'>
-                        <h2>Yhteystiedot</h2>
-                    </article>
+                    <PageTitle title={pageTitle} />
                     <section>
                         <ContactInfo
                             name="Mikael Jääskö"
@@ -43,9 +44,7 @@ export default function Contact() {
                     <Navbar />
                 </header>
                 <main id='contactMain'>
-                    <article className='prose'>
-                        <h1>Yhteystiedot</h1>
-                    </article>
+                    <PageTitle title={pageTitle} />
                     <section>
                         <ContactInfo
                             name="Mikael Jääskö"

@@ -8,14 +8,16 @@ export default function Landing() {
     if(window.innerWidth < 768){
         return(
             <div className="container">
-                <header id='landingHeaderMobile'>
+                <header id='landingHeader'>
                     <Navbar />
                 </header>
-                <main id='landingMainMobile'>
+                <main id='landingMain'>
                     <Stats />
-                    <article className="prose">
-                        <h3>Ajankohtaista</h3>
-                    </article>
+                    <section>
+                        <article className="prose">
+                            <h3>Ajankohtaista</h3>
+                        </article>
+                    </section>
                     <section>
                         <NewsContainer
                             date="13/10/2022"
@@ -37,17 +39,19 @@ export default function Landing() {
     }else {
         return(
             <div className='container'>
-                <header id='landingHeaderDesktop'>
+                <header id='landingHeader'>
                     <Navbar />
                     <article className="prose">
                         <h3>Sijoitustoimintaa vuodesta 2022</h3>
                     </article>
                     <Stats />
                 </header>
-                <main id='landingMainDesktop'>
-                    <article className="prose">
-                        <h2>Ajankohtaista</h2>
-                    </article>
+                <main id='landingMain'>
+                    <section>
+                        <article className="prose">
+                            <h2>Ajankohtaista</h2>
+                        </article>
+                    </section>
                     <section>
                         <NewsContainer
                             date="13/10/2022"
