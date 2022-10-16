@@ -48,8 +48,8 @@
     #landingHeader > article {
         margin-top: 2vh;
         margin-left: 1.5vw;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 1em;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0.8em;
         padding-inline: 0.5vw;
         width: fit-content;
     }

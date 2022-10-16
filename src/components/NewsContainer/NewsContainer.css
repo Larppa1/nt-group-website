@@ -6,21 +6,17 @@
     padding: 1em;
 }
 
-#newsContainer > h6 {
+#newsContainer > div > div > h6 {
     font-size: 0.8em;
 }
 
-#newsContainer > h4 {
-    margin-top: 0vh;
-}
-
-#newsContainer > p {
+#newsContainer > div > article > p {
     color: black;
     font-size: 0.9em;
 }
 
 @media (min-width: 768px) {
     #newsContainer {
-        width: 50vw;
+        width: 30vw;
     }
 }
