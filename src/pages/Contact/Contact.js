@@ -15,18 +15,20 @@ export default function Contact() {
                     <article className='prose'>
                         <h2>Yhteystiedot</h2>
                     </article>
-                    <ContactInfo
-                        name="Mikael Jääskö"
-                        position="Toimitusjohtaja"
-                        email="mikael@ntgrp.fi"
-                        phoneNum="+358 40 123 4567"
-                    />
-                    <ContactInfo
-                        name="Jimi Hämäläinen"
-                        position="Varatoimitusjohtaja"
-                        email="jimi@ntgrp.fi"
-                        phoneNum="+358 40 123 4567"
-                    />
+                    <section>
+                        <ContactInfo
+                            name="Mikael Jääskö"
+                            position="Toimitusjohtaja"
+                            email="mikael@ntgrp.fi"
+                            phoneNum="+358 40 123 4567"
+                        />
+                        <ContactInfo
+                            name="Jimi Hämäläinen"
+                            position="Varatoimitusjohtaja"
+                            email="jimi@ntgrp.fi"
+                            phoneNum="+358 40 123 4567"
+                        />
+                    </section>
                     <ContactForm />
                 </main>
                 <footer>
@@ -40,8 +42,25 @@ export default function Contact() {
                 <header>
                     <Navbar />
                 </header>
-                <main>
-
+                <main id='contactMain'>
+                    <article className='prose'>
+                        <h1>Yhteystiedot</h1>
+                    </article>
+                    <section>
+                        <ContactInfo
+                            name="Mikael Jääskö"
+                            position="Toimitusjohtaja"
+                            email="mikael@ntgrp.fi"
+                            phoneNum="+358 40 123 4567"
+                        />
+                        <ContactInfo
+                            name="Jimi Hämäläinen"
+                            position="Varatoimitusjohtaja"
+                            email="jimi@ntgrp.fi"
+                            phoneNum="+358 40 123 4567"
+                        />
+                    </section>
+                    <ContactForm />
                 </main>
                 <footer>
                     <Footer />

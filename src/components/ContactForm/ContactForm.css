@@ -29,3 +29,37 @@
 #contactForm > button {
     margin-top: 3vh;
 }
+
+#contactForm > button {
+    min-width: 30vw;
+}
+
+@media (min-width: 768px) {
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contactForm > article > h4 {
+        font-size: 1.5em;
+    }
+
+    #contactForm > textarea {
+        min-width: 40vw;
+        min-height: 30vh;
+    }
+
+    #contactForm > article > h6 {
+        margin-top: 2vh;
+    }
+
+    #contactForm > section > p {
+        margin-right: 1vw;
+    }
+
+    #contactForm > button {
+        min-width: 25vw;
+        width: 25vw;
+        max-width: 25vw;
+    }
+}
