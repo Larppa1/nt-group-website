@@ -1,0 +1,31 @@
+#contactForm {
+    margin-block-start: 2vh;
+    margin-block-end: 4vh;
+    width: 90%;
+    padding: 1em;
+}
+
+#contactForm > input, #contactForm > textarea {
+    margin-top: 2vh;
+}
+
+#contactForm > textarea {
+    min-height: 20vh;
+    padding-block: 1vh;
+    resize: none;
+}
+
+#contactForm > section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+
+#contactForm > section > p {
+    color: black;
+    margin-right: 2vw;
+}
+
+#contactForm > button {
+    margin-top: 3vh;
+}

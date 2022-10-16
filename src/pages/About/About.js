@@ -1,5 +1,5 @@
 import Navbar from '../../components//Navbar/Navbar'
-import Footer from '../../components/universal/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 
 export default function About() {
     if(window.innerWidth < 768) {

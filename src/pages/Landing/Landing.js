@@ -1,8 +1,8 @@
 import './Landing.css'
 import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/universal/Footer/Footer'
-import Stats from '../../components/universal/Stats/Stats'
-import NewsContainer from '../../components/universal/NewsContainer/NewsContainer'
+import Footer from '../../components/Footer/Footer'
+import Stats from '../../components/Stats/Stats'
+import NewsContainer from '../../components/NewsContainer/NewsContainer'
 
 export default function Landing() {
     if(window.innerWidth < 768){

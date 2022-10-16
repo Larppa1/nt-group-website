@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/universal/Footer/Footer'
-import ContactInfo from '../../components/universal/ContactInfo/ContactInfo'
+import Footer from '../../components/Footer/Footer'
+import ContactInfo from '../../components/ContactInfo/ContactInfo'
+import ContactForm from '../../components/ContactForm/ContactForm'
 import './Contact.css'
 
 export default function Contact() {
@@ -26,6 +27,7 @@ export default function Contact() {
                         email="jimi@ntgrp.fi"
                         phoneNum="+358 40 123 4567"
                     />
+                    <ContactForm />
                 </main>
                 <footer>
                     <Footer />
