@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Landing from './pages/Landing'
-import News from './pages/News'
-import ShareIssue from './pages/ShareIssue'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import Landing from './pages/Landing/Landing'
+import News from './pages/News/News'
+import ShareIssue from './pages/ShareIssue/ShareIssue'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
+import './App.css'
 
 export default function App() {
   return (

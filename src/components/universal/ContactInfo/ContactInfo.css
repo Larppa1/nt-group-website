@@ -1,0 +1,19 @@
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3vh;
+}
+
+#contactInfo > article {
+    text-align: center;
+}
+
+#contactInfo > article {
+    margin-top: 1vh;
+}
+
+#contactInfo > article > h4 {
+    font-style: italic;
+    margin-top: -1vh;
+}

@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
     .stats {
         position: absolute;
-        margin-top: 55vh;
+        margin-top: 40vh;
         min-width: 50vw;
         width: 50vw;
         max-width: 50vw;

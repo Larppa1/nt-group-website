@@ -1,0 +1,9 @@
+#contactMain > article {
+    text-align: center;
+    margin-block: 2vh;
+}
+
+#contactMain > article > h2 {
+    font-weight: 800;
+    text-decoration: underline;
+}

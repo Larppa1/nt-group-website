@@ -1,6 +1,5 @@
-import Navbar from '../components/mobile/Navbar/Navbar'
-import DesktopNavbar from '../components/desktop/Navbar/DesktopNavbar'
-import Footer from '../components/universal/Footer/Footer'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/universal/Footer/Footer'
 
 export default function ShareIssue() {
     if(window.innerWidth < 768) {
@@ -21,7 +20,7 @@ export default function ShareIssue() {
         return(
             <div className="container">
                 <header>
-                    <DesktopNavbar />
+                    <Navbar />
                 </header>
                 <main>
 
