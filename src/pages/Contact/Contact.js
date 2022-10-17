@@ -16,6 +16,7 @@ export default function Contact() {
                 </header>
                 <main id='contactMain'>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
                         <ContactInfo
                             name="Mikael Jääskö"
@@ -45,6 +46,7 @@ export default function Contact() {
                 </header>
                 <main id='contactMain'>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
                         <ContactInfo
                             name="Mikael Jääskö"

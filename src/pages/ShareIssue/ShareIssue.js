@@ -14,6 +14,7 @@ export default function ShareIssue() {
                 </header>
                 <main id='shareIssueMain'>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
                         <article className='prose'>
                             <h4>Kuule ensimmäisten joukossa osakeannistamme liittymällä sähköpostilistalle!</h4>
@@ -37,6 +38,7 @@ export default function ShareIssue() {
                 </header>
                 <main id='shareIssueMain'>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
                         <article className='prose'>
                             <h3>Kuule ensimmäisten joukossa osakeannistamme liittymällä sähköpostilistalle!</h3>

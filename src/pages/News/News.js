@@ -15,12 +15,8 @@ export default function News() {
                 </header>
                 <main>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                        />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
@@ -51,12 +47,8 @@ export default function News() {
                 </header>
                 <main id='newsMainDesktop'>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                     <section>
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                        />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"

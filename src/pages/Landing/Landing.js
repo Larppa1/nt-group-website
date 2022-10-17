@@ -9,7 +9,7 @@ export default function Landing() {
         return(
             <div className="container">
                 <header id='landingHeader'>
-                    <Navbar />
+                    <Navbar page="landing" />
                 </header>
                 <main id='landingMain'>
                     <Stats />
@@ -19,6 +19,11 @@ export default function Landing() {
                         </article>
                     </section>
                     <section>
+                        <NewsContainer
+                            date="13/10/2022"
+                            title="NT Groupin hallitus on muodostettu!"
+                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                        />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
@@ -40,7 +45,7 @@ export default function Landing() {
         return(
             <div className='container'>
                 <header id='landingHeader'>
-                    <Navbar />
+                    <Navbar page="landing" />
                     <article className="prose">
                         <h3>Sijoitustoimintaa vuodesta 2022</h3>
                     </article>
@@ -53,11 +58,6 @@ export default function Landing() {
                         </article>
                     </section>
                     <section>
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                        />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"

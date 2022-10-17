@@ -1,5 +1,6 @@
 #pageTitle {
-    margin-block: 3vh;
+    margin-block-start: 2vh;
+    margin-block-end: 0;
 }
 
 #pageTitle > article > h1 {

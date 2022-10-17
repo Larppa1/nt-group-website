@@ -1,10 +1,16 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css'
 
-export default function Navbar() {
+export default function Navbar(props) {
+    useEffect(() => {
+        const landingNav = document.getElementById('landingNav')
+        props.page === 'landing' ? landingNav.style["backgroundColor"] = 'rgba(0, 0, 0, 0.4)' : landingNav.style["opacity"] = '1'
+    }, [])
+
     if(window.innerWidth < 768) {
         return(
-            <nav className="navbar text-primary-content">
+            <nav id="landingNav" className="navbar bg-neutral text-primary-content">
                 <section className="flex-1">
                     <Link className="btn btn-ghost normal-case text-xl" style={{color: 'white', fontSize: '1.6em', fontWeight: '800'}}
                         to="/">NT Group
@@ -35,7 +41,7 @@ export default function Navbar() {
         )
     }else {
         return(
-            <nav className="navbar text-primary-content" style={{paddingBlock: '2vh'}}>
+            <nav  id="landingNav" className="navbar bg-neutral text-primary-content" style={{paddingBlock: '2vh'}}>
             <div className="flex-1">
                 <Link className="btn btn-ghost normal-case text-xl" style={{color: 'white', fontSize: '2.5em', fontWeight: '800'}}
                     to="/">NT Group

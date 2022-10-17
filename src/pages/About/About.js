@@ -14,6 +14,7 @@ export default function About() {
                 </header>
                 <main>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                 </main>
                 <footer>
                     <Footer />
@@ -28,6 +29,7 @@ export default function About() {
                 </header>
                 <main>
                     <PageTitle title={pageTitle} />
+                    <div className="divider"></div>
                 </main>
                 <footer>
                     <Footer />
