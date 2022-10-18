@@ -1,7 +1,6 @@
 import './Landing.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import Stats from '../../components/Stats/Stats'
 import NewsContainer from '../../components/NewsContainer/NewsContainer'
 
 export default function Landing() {
@@ -12,7 +11,6 @@ export default function Landing() {
                     <Navbar page="landing" />
                 </header>
                 <main id='landingMain'>
-                    <Stats />
                     <section>
                         <article className="prose">
                             <h3>Ajankohtaista</h3>
@@ -49,7 +47,6 @@ export default function Landing() {
                     <article className="prose">
                         <h3>Sijoitustoimintaa vuodesta 2022</h3>
                     </article>
-                    <Stats />
                 </header>
                 <main id='landingMain'>
                     <section>
