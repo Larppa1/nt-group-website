@@ -1,0 +1,20 @@
+.container > section {
+    padding: 1em;
+}
+
+.container > section > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3vh;
+}
+
+.container > section > form > input {
+    margin-block: 1vh;
+}
+
+.container > section > form > button {
+    margin-top: 2vh;
+    min-width: 10vw;
+    width: 10vw;
+    max-width: 10vw;
+}

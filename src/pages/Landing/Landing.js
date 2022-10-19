@@ -2,6 +2,7 @@ import './Landing.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import NewsContainer from '../../components/NewsContainer/NewsContainer'
+import { Link } from 'react-router-dom'
 
 export default function Landing() {
     if(window.innerWidth < 768){
@@ -78,7 +79,15 @@ export default function Landing() {
                 <footer>
                     <Footer />
                 </footer>
-                <input id='loginBtn' type="image" src="https://i.ibb.co/3z16wh1/icons8-lock-50.png" alt='Jäsenportaaliin kirjautuminen' />
+                <Link
+                    to="/memberLogin">
+                    <input
+                        id='loginBtn'
+                        type="image"
+                        src="https://i.ibb.co/3z16wh1/icons8-lock-50.png"
+                        alt='Jäsenportaaliin kirjautuminen'>
+                    </input>
+                </Link>
             </div>
         )
     }

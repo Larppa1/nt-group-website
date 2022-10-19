@@ -4,6 +4,7 @@ import News from './pages/News/News'
 import ShareIssue from './pages/ShareIssue/ShareIssue'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import MemberLogin from './pages/MemberLogin/MemberLogin'
 import './App.css'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path='/osakeanti' element={ <ShareIssue /> }/>
         <Route path='/tietoja' element={ <About /> }/>
         <Route path='/yhteystiedot' element={ <Contact /> }/>
+        <Route path='/memberLogin' element={ <MemberLogin /> }/>
       </Routes>
     </Router>
   )
