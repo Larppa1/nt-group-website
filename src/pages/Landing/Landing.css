@@ -85,6 +85,17 @@
         justify-content: space-evenly;
         margin-block: 6vh;
     }
+
+    #loginBtn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1em;
+    }
+
+    #landingContainer {
+        position: relative;
+    }
 }
 
 /*Desktops, large screens*/

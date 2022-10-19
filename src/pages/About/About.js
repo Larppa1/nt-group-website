@@ -12,9 +12,12 @@ export default function About() {
                 <header>
                     <Navbar />
                 </header>
-                <main>
+                <main id='aboutMain'>
                     <PageTitle title={pageTitle} />
                     <div className="divider"></div>
+                    <article className='prose'>
+                        <h4>HUOM! Usein kysytyt kysymykset löydät <span>FAQ</span>-osiosta.</h4>
+                    </article>
                 </main>
                 <footer>
                     <Footer />

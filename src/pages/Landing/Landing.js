@@ -44,7 +44,7 @@ export default function Landing() {
         )
     }else {
         return(
-            <div className='container'>
+            <div id='landingContainer' className='container'>
                 <header id='landingHeader'>
                     <Navbar page="landing" />
                 </header>
@@ -78,6 +78,7 @@ export default function Landing() {
                 <footer>
                     <Footer />
                 </footer>
+                <input id='loginBtn' type="image" src="https://i.ibb.co/3z16wh1/icons8-lock-50.png" alt='Jäsenportaaliin kirjautuminen' />
             </div>
         )
     }

@@ -34,6 +34,7 @@ export default function NewsContainer(props) {
                 <div className="card-body">
                     <article className='prose'>
                         <h2 className="card-title">{props.title}</h2>
+                        <div className="badge">{props.type}</div>
                         <p>{props.content}</p>
                     </article>
                     <div className="card-actions justify-end">

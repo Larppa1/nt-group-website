@@ -1,0 +1,11 @@
+#aboutMain {
+    padding-inline: 2vw;
+}
+
+#aboutMain > * span {
+    text-decoration: underline;
+}
+
+#aboutMain > * span:hover {
+    color: rgb(80, 80, 80);
+}
