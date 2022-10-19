@@ -15,6 +15,10 @@
     font-size: 0.9em;
 }
 
+.badge {
+    padding: 0.8em;
+}
+
 @media (min-width: 768px) {
     #newsContainer {
         width: 40vw;

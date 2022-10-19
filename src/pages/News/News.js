@@ -21,16 +21,19 @@ export default function News() {
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Blogi"
                         />
                     </section>
                 </main>
@@ -53,16 +56,19 @@ export default function News() {
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Blogi"
                         />
                     </section>
                 </main>

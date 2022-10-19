@@ -21,16 +21,19 @@ export default function Landing() {
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Blogi"
                         />
                     </section>
                 </main>
@@ -44,9 +47,6 @@ export default function Landing() {
             <div className='container'>
                 <header id='landingHeader'>
                     <Navbar page="landing" />
-                    <article className="prose">
-                        <h3>Sijoitustoimintaa vuodesta 2022</h3>
-                    </article>
                 </header>
                 <main id='landingMain'>
                     <section>
@@ -59,16 +59,19 @@ export default function Landing() {
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Uutinen"
                         />
                         <NewsContainer
                             date="13/10/2022"
                             title="NT Groupin hallitus on muodostettu!"
                             content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
+                            type="Blogi"
                         />
                     </section>
                 </main>

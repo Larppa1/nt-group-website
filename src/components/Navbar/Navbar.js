@@ -31,8 +31,8 @@ export default function Navbar(props) {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                         <li><Link to="/">Etusivu</Link></li>
-                        <li><Link to="/uutiset">Uutiset</Link></li>
                         <li><Link to="/osakeanti">Osakeanti</Link></li>
+                        <li><Link to="/uutiset">Uutiset</Link></li>
                         <li><Link to="/tietoja">Tietoja</Link></li>
                         <li><Link to="/yhteystiedot">Yhteystiedot</Link></li>
                     </ul>
@@ -50,8 +50,8 @@ export default function Navbar(props) {
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
                     <li><Link to="/">Etusivu</Link></li>
-                    <li><Link to="/uutiset">Uutiset</Link></li>
                     <li><Link to="/osakeanti">Osakeanti</Link></li>
+                    <li><Link to="/uutiset">Uutiset</Link></li>
                     <li><Link to="/tietoja">Tietoja</Link></li>
                     <li><Link to="/yhteystiedot">Yhteystiedot</Link></li>
                 </ul>
