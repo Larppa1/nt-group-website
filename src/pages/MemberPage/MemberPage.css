@@ -1,0 +1,31 @@
+#memberPage > header {
+    padding: 1em;
+}
+
+#memberPage > main > section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 75vh;
+    position: relative;
+}
+
+#memberPage > main > section > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    margin-top: 4vh;
+}
+
+#memberPage > * h2 {
+    text-decoration: underline;
+}
+
+#memberPage > main > section > section:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}

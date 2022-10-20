@@ -2,17 +2,17 @@
     padding: 1em;
 }
 
-.container > section > form {
+#form {
     display: flex;
     flex-direction: column;
     margin-top: -3vh;
 }
 
-.container > section > form > input {
+#form > input {
     margin-block: 1vh;
 }
 
-.container > section > form > button {
+#form > button {
     margin-top: 2vh;
     min-width: 10vw;
     width: 10vw;

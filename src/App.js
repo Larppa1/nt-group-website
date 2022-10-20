@@ -5,6 +5,7 @@ import ShareIssue from './pages/ShareIssue/ShareIssue'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import MemberLogin from './pages/MemberLogin/MemberLogin'
+import MemberPage from './pages/MemberPage/MemberPage'
 import './App.css'
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Route path='/tietoja' element={ <About /> }/>
         <Route path='/yhteystiedot' element={ <Contact /> }/>
         <Route path='/memberLogin' element={ <MemberLogin /> }/>
+        <Route path='/memberPage' element={ <MemberPage /> }/>
       </Routes>
     </Router>
   )
