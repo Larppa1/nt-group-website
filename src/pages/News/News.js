@@ -4,7 +4,7 @@ import PageTitle from '../../components/PageTitle/PageTitle'
 import './News.css'
 import NewsContainer from '../../components/NewsContainer/NewsContainer'
 import { useEffect, useState } from 'react'
-import { collection, query, getDocs } from "firebase/firestore"; 
+import { collection, query, getDocs, orderBy } from "firebase/firestore"; 
 import { db } from '../../firebase-config'
 
 export default function News() {
@@ -14,7 +14,7 @@ export default function News() {
     useEffect(() => {
         async function fetchData() {
             const articlesRef = collection(db, 'articles')
-            const q = query(articlesRef)
+            const q = query((articlesRef), orderBy('date', 'desc'))
             const querySnapshot = await getDocs(q)
 
             let articles = []
@@ -37,7 +37,7 @@ export default function News() {
                     <div className="divider"></div>
                     <section>
                         {articles && articles.map((article) => (
-                            <NewsContainer key={article.key} content={article.content} date={article.date} title={article.title} type={article.type} />
+                            <NewsContainer key={article.id} content={article.content} date={article.date} title={article.title} type={article.type} />
                         ))}
                     </section>
                 </main>
@@ -57,7 +57,7 @@ export default function News() {
                     <div className="divider"></div>
                     <section>
                         {articles && articles.map((article) => (
-                            <NewsContainer key={article.key} content={article.content} date={article.date} title={article.title} type={article.type} />
+                            <NewsContainer key={article.id} content={article.content} date={article.date} title={article.title} type={article.type} />
                         ))}
                     </section>
                 </main>
