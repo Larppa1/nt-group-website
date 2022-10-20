@@ -6,7 +6,7 @@ export default function Navbar(props) {
     useEffect(() => {
         const landingNav = document.getElementById('landingNav')
         props.page === 'landing' ? landingNav.style["backgroundColor"] = 'rgba(0, 0, 0, 0.4)' : landingNav.style["opacity"] = '1'
-    }, [])
+    })
 
     if(window.innerWidth < 768) {
         return(

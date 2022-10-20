@@ -5,7 +5,7 @@ export default function ContactInfo(props) {
         <section id='contactInfo'>
             <div className="avatar">
                 <div className="w-24 rounded-full">
-                    <img src="https://placeimg.com/192/192/people" />
+                    <img src="https://placeimg.com/192/192/people" alt='Avatar' />
                 </div>
             </div>
             <article className='prose'>

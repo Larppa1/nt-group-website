@@ -1,3 +1,4 @@
+import ActionContainer from '../../components/ActionContainer/ActionContainer'
 import './MemberPage.css'
 
 export default function MemberPage() {
@@ -9,18 +10,7 @@ export default function MemberPage() {
                 </article>
             </header>
             <main>
-                <section className='shadow-xl'>
-                    <section>
-                        <article className='prose'>
-                            <h2>Valitse toiminto</h2>
-                        </article>
-                    </section>
-                    <section>
-                        <button className="btn btn-lg">Uusi teksti</button>
-                        <button className="btn btn-lg">Muokkaa tekstiä</button>
-                        <button className="btn btn-lg">Poista teksti</button>
-                    </section>
-                </section>
+                <ActionContainer />
             </main>
         </div>
     )

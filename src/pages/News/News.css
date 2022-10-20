@@ -6,5 +6,6 @@
         align-items: center;
         justify-content: space-evenly;
         margin-block: 6vh;
+        width: 100%;
     }
 }

@@ -3,8 +3,28 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import NewsContainer from '../../components/NewsContainer/NewsContainer'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { collection, query, getDocs } from "firebase/firestore"; 
+import { db } from '../../firebase-config'
 
 export default function Landing() {
+    const [articles, setArticles] = useState([])
+
+    useEffect(() => {
+        async function fetchData() {
+            const articlesRef = collection(db, 'articles')
+            const q = query(articlesRef)
+            const querySnapshot = await getDocs(q)
+
+            let articles = []
+            querySnapshot.forEach((doc) => {
+                articles.push({...doc.data(), id: doc.id})
+            })
+            setArticles(articles)
+        }
+        fetchData()
+    }, [])
+
     if(window.innerWidth < 768){
         return(
             <div className="container">
@@ -18,24 +38,9 @@ export default function Landing() {
                         </article>
                     </section>
                     <section>
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Uutinen"
-                        />
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Uutinen"
-                        />
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Blogi"
-                        />
+                        {articles && articles.map((article) => (
+                            <NewsContainer key={article.key} content={article.content} date={article.date} title={article.title} type={article.type} />
+                        ))}
                     </section>
                 </main>
                 <footer>
@@ -56,24 +61,9 @@ export default function Landing() {
                         </article>
                     </section>
                     <section>
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Uutinen"
-                        />
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Uutinen"
-                        />
-                        <NewsContainer
-                            date="13/10/2022"
-                            title="NT Groupin hallitus on muodostettu!"
-                            content="Vihdoin NT Groupin hallitukseen kuuluvat henkilöt ovat selvillä - löydät tarkemmat tiedot Tietoja-osiosta."
-                            type="Blogi"
-                        />
+                        {articles && articles.map((article) => (
+                            <NewsContainer key={article.key} content={article.content} date={article.date} title={article.title} type={article.type} />
+                        ))}
                     </section>
                 </main>
                 <footer>
