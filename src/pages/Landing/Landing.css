@@ -60,10 +60,6 @@
         font-weight: 700;
     }
 
-    #landingMain {
-        border: 1px solid red;
-    }
-
     #landingMain > section > article > h2 {
         color: black;
         font-weight: 600;
