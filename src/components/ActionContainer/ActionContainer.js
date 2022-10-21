@@ -26,7 +26,7 @@ export default function ActionContainer() {
     switch(action) {
         case 'default':
             return(
-                <section className='shadow-xl'>
+                <section id='actionContainerDefault' className='actionContainer shadow-xl'>
                     <section>
                         <article className='prose'>
                             <h2>Valitse toiminto</h2>
@@ -41,23 +41,29 @@ export default function ActionContainer() {
             );
         case 'add':
             return(
-                <section id='actionContainer' className='shadow-xl'>
+                <section id='actionContainerAdd' className='actionContainer shadow-xl'>
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
-                    
+                    <section>
+                        <input type="text" placeholder="Otsikko" autoComplete='off' className="input input-bordered w-full max-w-xs" />
+                        <textarea type="text" placeholder="Teksti" className="input input-bordered w-full max-w-xs" />
+                        <button className="btn btn-lg" onClick={() => setAction('default')}>Julkaise</button>
+                    </section>
                 </section>
             );
         case 'edit':
             return(
-                <section id='actionContainer' className='shadow-xl'>
+                <section id='actionContainerEdit' className='actionContainer shadow-xl'>
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
-                    {articles && articles.map((article) => (
-                            <NewsContainerCompact key={article.key} date={article.date} title={article.title} type={article.type} action="edit" />
-                    ))}
+                    <section>
+                        {articles && articles.map((article) => (
+                                <NewsContainerCompact key={article.key} date={article.date} title={article.title} type={article.type} action="edit" />
+                        ))}
+                    </section>
                 </section>
             );
         case 'remove':
             return(
-                <section id='actionContainer' className='shadow-xl'>
+                <section id='actionContainerRemove' className='actionContainer shadow-xl'>
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
                     {articles && articles.map((article) => (
                             <NewsContainerCompact key={article.key} date={article.date} title={article.title} type={article.type} action="remove" />

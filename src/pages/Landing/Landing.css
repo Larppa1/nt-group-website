@@ -61,7 +61,7 @@
     }
 
     #landingMain {
-        padding-inline: 2vw;
+        border: 1px solid red;
     }
 
     #landingMain > section > article > h2 {
@@ -77,13 +77,14 @@
         margin-block-end: 0;
     }
 
-    #landingMain > section {
+    #landingMain > section:last-of-type {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         margin-block: 6vh;
+        width: 100%;
     }
 
     #loginBtn {

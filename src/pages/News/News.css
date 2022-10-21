@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    main > section {
+    #newsMain > section:last-of-type {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

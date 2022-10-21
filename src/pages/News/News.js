@@ -32,7 +32,7 @@ export default function News() {
                 <header>
                     <Navbar />
                 </header>
-                <main>
+                <main id='newsMain'>
                     <PageTitle title={pageTitle} />
                     <div className="divider"></div>
                     <section>
@@ -52,7 +52,7 @@ export default function News() {
                 <header>
                     <Navbar />
                 </header>
-                <main id='newsMainDesktop'>
+                <main id='newsMain'>
                     <PageTitle title={pageTitle} />
                     <div className="divider"></div>
                     <section>
