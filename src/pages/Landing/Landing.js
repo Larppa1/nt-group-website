@@ -13,12 +13,14 @@ export default function Landing() {
     useEffect(() => {
         async function fetchData() {
             const articlesRef = collection(db, 'articles')
-            const q = query((articlesRef), orderBy('date', 'desc'))
+            const q = query((articlesRef),
+                            orderBy('date', 'desc'))
             const querySnapshot = await getDocs(q)
 
             let articles = []
             querySnapshot.forEach((doc) => {
-                articles.push({...doc.data(), id: doc.id})
+                articles.push({...doc.data(),
+                                    id: doc.id})
             })
             setArticles(articles)
         }
@@ -39,7 +41,13 @@ export default function Landing() {
                     </section>
                     <section>
                         {articles && articles.map((article) => (
-                            <NewsContainer key={article.id} content={article.content} date={article.date} title={article.title} type={article.type} />
+                            <NewsContainer
+                                key={article.id}
+                                content={article.content}
+                                date={article.date}
+                                title={article.title}
+                                type={article.type}
+                            />
                         ))}
                     </section>
                 </main>
@@ -62,7 +70,13 @@ export default function Landing() {
                     </section>
                     <section>
                         {articles && articles.map((article) => (
-                            <NewsContainer key={article.id} content={article.content} date={article.date} title={article.title} type={article.type} />
+                            <NewsContainer
+                                key={article.id}
+                                content={article.content}
+                                date={article.date}
+                                title={article.title}
+                                type={article.type}
+                            />
                         ))}
                     </section>
                 </main>

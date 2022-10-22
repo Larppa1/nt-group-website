@@ -20,7 +20,13 @@ export default function ShareIssue() {
                             <h4>Kuule ensimmäisten joukossa osakeannistamme liittymällä sähköpostilistalle!</h4>
                         </article>
                         <form>
-                            <input type="email" placeholder="Sähköposti" required id='emailInput' className="input input-bordered w-full max-w-xs" />
+                            <input
+                                id='emailInput'
+                                className="input input-bordered w-full max-w-xs"
+                                type="email"
+                                placeholder="Sähköposti"
+                                required="true"
+                            />
                             <button className="btn">Liity</button>
                         </form>
                     </section>
@@ -44,7 +50,13 @@ export default function ShareIssue() {
                             <h3>Kuule ensimmäisten joukossa osakeannistamme liittymällä sähköpostilistalle!</h3>
                         </article>
                         <form>
-                            <input type="email" placeholder="Sähköposti" id='emailInput' required className="input input-bordered w-full max-w-xs" />
+                            <input
+                                id='emailInput'
+                                className="input input-bordered w-full max-w-xs"
+                                type="email"
+                                placeholder="Sähköposti"
+                                required="true"
+                            />
                             <button className="btn">Liity</button>
                         </form>
                     </section>

@@ -9,7 +9,8 @@ export default function About() {
     const [faqPosition, setFaqPosition] = useState(0)
 
     useEffect(() => {
-        setFaqPosition(document.getElementById('faqContainer').getBoundingClientRect().top + 20)
+        setFaqPosition(document.getElementById('faqContainer')
+                            .getBoundingClientRect().top + 20)
     }, [])
 
     if(window.innerWidth < 768) {
@@ -23,10 +24,13 @@ export default function About() {
                     <div className="divider"></div>
                     <section>
                         <article className='prose'>
-                            <h4>Huom! Usein kysytyt kysymykset löydät <span onClick={() => window.scrollTo({
-                                top: faqPosition,
-                                behavior: 'smooth',
-                            })}>FAQ</span>-osiosta.</h4>
+                            <h4>Huom! Usein kysytyt kysymykset löydät&nbsp;
+                                <span onClick={() => window.scrollTo({
+                                    top: faqPosition,
+                                    behavior: 'smooth',
+                                    })}>FAQ
+                                </span>-osiosta.
+                            </h4>
                         </article>
                     </section>
                     <section id='faqContainer'>
@@ -49,10 +53,13 @@ export default function About() {
                     <div className="divider"></div>
                     <section>
                         <article className='prose'>
-                            <h3>Huom! Usein kysytyt kysymykset löydät <span onClick={() => window.scrollTo({
-                                top: faqPosition,
-                                behavior: 'smooth',
-                            })}>FAQ</span>-osiosta.</h3>
+                            <h3>Huom! Usein kysytyt kysymykset löydät&nbsp;
+                                <span onClick={() => window.scrollTo({
+                                    top: faqPosition,
+                                    behavior: 'smooth',
+                                    })}>FAQ
+                                </span>-osiosta.
+                            </h3>
                         </article>
                     </section>
                     <section id='faqContainer'>

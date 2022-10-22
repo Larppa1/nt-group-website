@@ -10,7 +10,7 @@ export default function MemberLogin() {
         const userEmail = document.getElementById('userEmail').value
         const userPassword = document.getElementById('userPass').value
         signInWithEmailAndPassword(auth, userEmail, userPassword)
-            .then((userCredential) => {
+            .then(() => {
                 navigate('/memberPage')
             })
             .catch((err) => {
@@ -28,9 +28,23 @@ export default function MemberLogin() {
                 </article>
             </section>
             <section id='form'>
-                <input id='userEmail' type="text" placeholder="Sähköposti" autoComplete='off' className="input input-bordered w-full max-w-xs" />
-                <input id='userPass' type="password" placeholder="Salasana" className="input input-bordered w-full max-w-xs" />
-                <button className='btn' onClick={loginUser}>Kirjaudu</button>
+                <input
+                    id='userEmail'
+                    className="input input-bordered w-full max-w-xs"
+                    type="text"
+                    placeholder="Sähköposti"
+                    autoComplete='off'
+                />
+                <input
+                    id='userPass'
+                    className="input input-bordered w-full max-w-xs"
+                    type="password"
+                    placeholder="Salasana"
+                />
+                <button
+                    className='btn'
+                    onClick={loginUser}>Kirjaudu
+                </button>
             </section>
         </div>
     )
