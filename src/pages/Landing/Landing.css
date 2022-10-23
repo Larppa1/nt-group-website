@@ -18,7 +18,7 @@
 }
 
 #landingMain > section:first-of-type > article {
-    margin-left: 2vw;
+    margin-left: 4vw;
 }
 
 #landingMain > section:last-of-type {
@@ -43,6 +43,10 @@
     #landingHeader {
         min-height: 75vh;
         background-size: 100%;
+    }
+
+    #landingMain > section:first-of-type > article {
+        margin-left: 2vw;
     }
 
     #landingMain > section:last-of-type {
