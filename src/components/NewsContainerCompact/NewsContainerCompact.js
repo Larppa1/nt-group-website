@@ -1,14 +1,15 @@
 import './NewsContainerCompact.css'
-import { doc, deleteDoc } from "firebase/firestore";
 import { db } from '../../firebase-config'
+import { doc, deleteDoc } from "firebase/firestore";
 
 export default function NewsContainerCompact(props) {
     const editArticle = async () => {
         console.log('edit')
     }
     
-    const deleteArticle = async () => {
-        console.log('delete')
+    const deleteArticle = async (id) => {
+        await deleteDoc(doc(db, 'articles', id))
+        props.setAction()
     }
 
     return(
@@ -18,7 +19,7 @@ export default function NewsContainerCompact(props) {
                 <h3>{props.date}</h3>
                 <h3>{props.type}</h3>
             </article>
-            <button className="btn btn-sm" onClick={() => props.action === 'edit' ? editArticle() : deleteArticle()}>{props.action === 'edit' ? 'Muokkaa' : 'Poista'}</button>
+            <button className="btn btn-sm" onClick={() => props.action === 'edit' ? editArticle() : deleteArticle(props.id)}>{props.action === 'edit' ? 'Muokkaa' : 'Poista'}</button>
         </div>
     )
 }

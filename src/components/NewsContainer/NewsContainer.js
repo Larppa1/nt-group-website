@@ -1,6 +1,11 @@
+import { useEffect } from 'react'
 import './NewsContainer.css'
 
 export default function NewsContainer(props) {
+    useEffect(() => {
+        document.getElementById('content').innerHTML = props.content
+    })
+
     if(window.innerWidth < 768) {
         return(
             <article id='newsContainer' className="card w-96 bg-base-100 shadow-xl">
@@ -14,7 +19,7 @@ export default function NewsContainer(props) {
                     <article className='prose'>
                         <h2 className="card-title">{props.title}</h2>
                         <div className="badge">{props.type}</div>
-                        <p>{props.content}</p>
+                        <p id='content'></p>
                     </article>
                     <div className="card-actions justify-end">
                         <h6>{props.date}</h6>
@@ -35,7 +40,7 @@ export default function NewsContainer(props) {
                     <article className='prose'>
                         <h2 className="card-title">{props.title}</h2>
                         <div className="badge">{props.type}</div>
-                        <p>{props.content}</p>
+                        <p id='content'></p>
                     </article>
                     <div className="card-actions justify-end">
                         <h6>{props.date}</h6>

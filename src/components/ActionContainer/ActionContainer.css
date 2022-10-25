@@ -47,11 +47,23 @@
     margin-top: 5vh;
 }
 
+#actionContainerAdd > section > input:first-of-type {
+    min-height: 10%;
+}
+
 #actionContainerAdd > section > textarea {
     min-width: 60%;
     min-height: 40%;
     padding-block: 1vh;
     resize: none;
+}
+
+#actionContainerAdd > section > section {
+    min-width: 60%;
+}
+
+#actionContainerAdd > section > section > div {
+    max-width: 20%;
 }
 
 /*actionContainerEdit*/
@@ -63,14 +75,21 @@
     height: 75vh;
 }
 
-#actionContainerEdit > section {
+#actionContainerEdit > section:first-of-type {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    flex-flow: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
     height: 80%;
     width: 80%;
 }
 
 #actionContainerEdit > section > * {
     margin-top: 5vh;
-} 
+}
+
+#actionContainerRemove > section:first-of-type {
+    border: 1px solid red;
+}

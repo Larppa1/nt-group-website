@@ -1,12 +1,29 @@
 import { useEffect, useState } from 'react'
 import './ActionContainer.css'
-import { collection, query, getDocs, orderBy } from "firebase/firestore"; 
+import { collection, query, getDocs, orderBy, setDoc, doc, addDoc, updateDoc } from "firebase/firestore"; 
 import { db } from '../../firebase-config'
 import NewsContainerCompact from '../NewsContainerCompact/NewsContainerCompact';
 
 export default function ActionContainer() {
     const [action, setAction] = useState('default')
     const [articles, setArticles] = useState([])
+
+    const addText = async () => {
+        const newDocRef = await addDoc(collection(db, 'articles'), {
+            content: document.getElementById('content').value,
+            title: document.getElementById('title').value,
+            date: new Date().toDateString(),
+            type: document.getElementById('newsRadio').checked ? 'Uutinen' : 'Blogi',
+        })
+        await updateDoc(doc(db, 'articles', newDocRef.id), {
+            key: newDocRef.id,
+        })
+        setAction('default')
+    }
+
+    const changeAction = () => {
+        setAction('default')
+    }
 
     useEffect(() => {
         async function fetchData() {
@@ -44,9 +61,23 @@ export default function ActionContainer() {
                 <section id='actionContainerAdd' className='actionContainer shadow-xl'>
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
                     <section>
-                        <input type="text" placeholder="Otsikko" autoComplete='off' className="input input-bordered w-full max-w-xs" />
-                        <textarea type="text" placeholder="Teksti" className="input input-bordered w-full max-w-xs" />
-                        <button className="btn btn-lg" onClick={() => setAction('default')}>Julkaise</button>
+                        <input id='title' type="text" placeholder="Otsikko" autoComplete='off' className="input input-bordered w-full max-w-xs" />
+                        <textarea id='content' type="text" placeholder="Teksti" className="input input-bordered w-full max-w-xs" />
+                        <section>
+                            <div className="form-control">
+                                <label className="label cursor-pointer">
+                                    <span className="label-text">Uutinen</span> 
+                                    <input id='newsRadio' type="radio" name="radio-6" className="radio" checked="true" />
+                                </label>
+                            </div>
+                            <div className="form-control">
+                                <label className="label cursor-pointer">
+                                    <span className="label-text">Blogi</span> 
+                                    <input id='blogRadio' type="radio" name="radio-6" className="radio" checked="true" />
+                                </label>
+                            </div>
+                        </section>
+                        <button className="btn btn-lg" onClick={addText}>Julkaise</button>
                     </section>
                 </section>
             );
@@ -56,7 +87,7 @@ export default function ActionContainer() {
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
                     <section>
                         {articles && articles.map((article) => (
-                                <NewsContainerCompact key={article.key} date={article.date} title={article.title} type={article.type} action="edit" />
+                                <NewsContainerCompact key={article.key} id={article.key} date={article.date} title={article.title} type={article.type} action="edit" />
                         ))}
                     </section>
                 </section>
@@ -66,7 +97,7 @@ export default function ActionContainer() {
                 <section id='actionContainerRemove' className='actionContainer shadow-xl'>
                     <button id='backBtn' className="btn btn-xs" onClick={() => setAction('default')}>Takaisin</button>
                     {articles && articles.map((article) => (
-                            <NewsContainerCompact key={article.key} date={article.date} title={article.title} type={article.type} action="remove" />
+                            <NewsContainerCompact key={article.key} id={article.key} date={article.date} title={article.title} type={article.type} setAction={changeAction} action="remove" />
                     ))}
                 </section>
             );
