@@ -15,6 +15,10 @@
     font-size: 0.9em;
 }
 
+#newsContainer:hover {
+    cursor: pointer;
+}
+
 .badge {
     padding: 0.8em;
 }
