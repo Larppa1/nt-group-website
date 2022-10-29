@@ -5,3 +5,7 @@ footer {
 footer > section > article > h3:first-of-type, p:first-of-type {
     color: white;
 }
+
+footer > section:last-of-type {
+    width: 100%;
+}

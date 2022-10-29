@@ -19,15 +19,15 @@ export default function Contact() {
                     <div className="divider"></div>
                     <section>
                         <ContactInfo
-                            name="Mikael Jääskö"
-                            position="Toimitusjohtaja"
-                            email="mikael@ntgrp.fi"
+                            name="Etunimi Sukunimi"
+                            position="Titteli"
+                            email="etunimi@ntgrp.fi"
                             phoneNum="+358 40 123 4567"
                         />
                         <ContactInfo
-                            name="Jimi Hämäläinen"
-                            position="Varatoimitusjohtaja"
-                            email="jimi@ntgrp.fi"
+                            name="Etunimi Sukunimi"
+                            position="Titteli"
+                            email="etunimi@ntgrp.fi"
                             phoneNum="+358 40 123 4567"
                         />
                     </section>
@@ -49,15 +49,15 @@ export default function Contact() {
                     <div className="divider"></div>
                     <section>
                         <ContactInfo
-                            name="Mikael Jääskö"
-                            position="Toimitusjohtaja"
-                            email="mikael@ntgrp.fi"
+                            name="Etunimi Sukunimi"
+                            position="Titteli"
+                            email="etunimi@ntgrp.fi"
                             phoneNum="+358 40 123 4567"
                         />
                         <ContactInfo
-                            name="Jimi Hämäläinen"
-                            position="Varatoimitusjohtaja"
-                            email="jimi@ntgrp.fi"
+                            name="Etunimi Sukunimi"
+                            position="Titteli"
+                            email="etunimi@ntgrp.fi"
                             phoneNum="+358 40 123 4567"
                         />
                     </section>
