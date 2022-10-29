@@ -19,8 +19,10 @@ export default function Landing() {
 
             let articles = []
             querySnapshot.forEach((doc) => {
-                articles.push({...doc.data(),
-                                    id: doc.id})
+                articles.push({
+                    ...doc.data(),
+                    id: doc.id
+                })
             })
             setArticles(articles)
         }
