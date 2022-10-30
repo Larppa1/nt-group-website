@@ -18,8 +18,7 @@
 }
 
 #shareIssueMain > section > form {
-    margin-block-start: 4vh;
-    margin-block-end: 35vh;
+    margin-block: 4vh;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -35,11 +34,16 @@
     width: 50%;
 }
 
-@media (min-width: 768px) {
-    #shareIssueMain > section > form {
-        margin-block-end: 25vh;
-    }
+#shareIssueMain > section:last-of-type {
+    padding-bottom: 30vh;
+}
 
+#shareIssueMain > section:last-of-type > article:last-of-type > h4 {
+    font-style: italic;
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
     #shareIssueMain > section > form > button {
         margin-top: 4vh;
         width: 20%;
