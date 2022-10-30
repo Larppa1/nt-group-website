@@ -3,6 +3,7 @@
     background-image: url("https://i.ibb.co/PxLFLFw/wallpapersden-com-helsinki-finland-capital-3840x2160.jpg");
     background-size: 150%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #landingMain > section > article > * {
